@@ -52,8 +52,10 @@ p, li {
 
 header {
   margin-bottom: 10px;
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex;
+  flex-flow: row wrap; */
+  display: grid;
+  grid-template-columns: 80% 20%;
 }
 
 body > * {
@@ -67,33 +69,47 @@ main, header, nav, article, aside, footer, section {
 }
 
 h1 {
-  flex: 5;
+   /* flex: 5; */
   text-transform: uppercase;
 }
 
+#titleBirds{
+  display: grid;
+  
+}
+
+#head_img{
+  display: grid;
+  justify-content: end;  
+}
 header img {
-  display: block;
+  /* display: block; */
+  /* display: grid;
+  justify-content: right; */
+
   height: 60px;
   padding-top: 20.15px;
 }
 
 nav {
   height: 50px;
-  flex: 100%;
-  display: flex;
+  /* flex: 100%;
+  display: flex; */
 }
 
 nav ul {
   padding: 0;
   list-style-type: none;
-  flex: 2;
-  display: flex;
+  /* flex: 2;
+  display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 nav li {
   display: inline;
   text-align: center;
-  flex: 1;
+  /* flex: 1; */
 }
 
 nav a, nav span {
@@ -110,15 +126,17 @@ nav a, nav span {
 /* || main layout */
 
 main {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 75% 25%;
 }
 
 article, section {
-  flex: 4;
+  /* flex: 4; */
 }
 
 aside {
-  flex: 1;
+  /* flex: 1; */
   margin-left: 10px;
   padding: 1%;
 }
